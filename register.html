@@ -10,6 +10,32 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="/css/message.css">
+
+    <style>
+      .signin-button {
+        background-color: #007BFF;
+        color: white;
+        padding: 10px 24px;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .signin-button:hover {
+        background-color: #0056b3;
+      }
+
+      .signin-link-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .signin-link-container p {
+        margin-bottom: 8px;
+      }
+    </style>
   </head>
   <body>
     <div id="noCognitoMessage" class="configMessage" style="display: none;">
@@ -33,10 +59,12 @@
         <input type="submit" value="Let's Ryde">
       </form>
 
-      <!-- Navigation to Sign In -->
-      <div style="text-align: center; margin-top: 20px;">
+      <!-- Styled Sign In Button -->
+      <div class="signin-link-container">
         <p>Already have an account?</p>
-        <a href="signin.html"><button type="button">Sign In</button></a>
+        <a href="signin.html">
+          <button type="button" class="signin-button">Sign In</button>
+        </a>
       </div>
     </section>
 
